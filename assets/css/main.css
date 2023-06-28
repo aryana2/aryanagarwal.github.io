@@ -1776,6 +1776,24 @@ input, select, textarea {
 		margin: 2.5em 0 0 0;
 	}
 
+.panel-block {
+    float: left;
+    width: 100%;
+}
+.panel-img {
+float: left;
+    width: calc(100%/3 - 20px);
+    height: 141px;
+    overflow: hidden;
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    background-color: #c5c5c5;
+}
+.panel-img img {
+    width: 100%;
+}
+
 /* Image */
 
 	.image {
@@ -1797,7 +1815,7 @@ input, select, textarea {
 
 		.image.featured {
 			display: block;
-			width: 100%;
+			width: 50%;
 			margin: 0 0 4em 0;
 		}
 
