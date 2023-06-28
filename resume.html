@@ -11,6 +11,41 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<style>
+			* {
+			   box-sizing: border-box;
+			}
+			h1 {
+			   text-align: center;
+			}
+			.outer-grid {
+			   display: flex;
+			   flex-wrap: wrap;
+			   padding: 0 4px;
+			}
+			.inner-grid {
+			   flex: 25%;
+			   max-width: 25%;
+			   padding: 0 4px;
+			}
+			.inner-grid img {
+			   margin-top: 8px;
+			   width: 240px;
+			   padding: 240px;
+			}
+			@media screen and (max-width: 800px) {
+			   .inner-grid {
+			      flex: 50%;
+			      max-width: 50%;
+			   }
+			}
+			@media screen and (max-width: 600px) {
+			   .inner-grid {
+			      flex: 100%;
+			      max-width: 100%;
+			   }
+			}
+		</style>
 	</head>
 	<body class="left-sidebar is-preload">
 		<div id="page-wrapper">
@@ -274,20 +309,20 @@
 									<h2>Skills</h2>
 								</header>
 							</section>
-							<section>
-								<article class="col-4 col-12-mobile special">
-									<img src="images/matlab.png" width="240" height="240" alt="" />
-									<h1>MATLAB</h1>
-								</article>
-								<article class="col-4 col-12-mobile special">
-									<img src="images/python.png" width="240" height="240" alt="" />
-									<h1>Python</h1>
-								</article>
-								<article class="col-4 col-12-mobile special">
-									<img src="images/jupyter.png" width="240" height="240" alt="" />
-									<h1>Jupyter</h1>
-								</article>
-							</section>
+							<div class="outer-grid">
+								<div class="inner-grid">
+									<img src="images/matlab.png"/>
+									<img src="images/python.png"/>
+									<img src="images/jupyter.png"/>
+									<img src="images/arduino.png"/>
+								</div>
+								<div class="inner-grid">
+									<img src="images/android.png"/>
+									<img src="images/github.png"/>
+									<img src="images/java.png"/>
+									<img src="images/labview.png"/>
+								</div>
+							</div>									
 						</div>
 					</div>
 
