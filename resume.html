@@ -12,27 +12,40 @@
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 		<style>
-			.grid { 
-			  display: grid;
-			  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-			  grid-gap: 20px;
-			  align-items: stretch;
-			  }
-			.grid img {
-			  max-width: 100%;
+			.image-list-small {
+			  margin: 0 auto;
+			  text-align: center;
+			  max-width: 640px;
+			  padding: 0;
 			}
-			.figcaption{
-			  position:absolute;
-			  bottom:0;
-			  left:0;
-			  right:0;
-			  padding:0.2em 2px;
-			  min-height:2.4em;
-			  opacity:1;
-			  transition:0.5s;;
+			
+			.image-list-small li {
+			  display: inline-block;
+			  width: 240px;
+			  margin: 0 12px 30px;
 			}
-			.figcaption p {
-			  margin:0;
+			
+			.image-list-small li > a {
+			  display: block;
+			  text-decoration: none;
+			  background-size: cover;
+			  background-repeat: no-repeat;
+			  height: 137px;
+			  margin: 0;
+			  padding: 0;
+			}
+			
+			.image-list-small .details {
+			  margin-top: 13px;
+			}
+			
+			
+			.image-list-small .details h3 {
+			  display: block;
+			  margin: 0 0 3px 0;
+			  white-space: nowrap;
+			  overflow: hidden;
+			  text-overflow: ellipsis;
 			}
 		</style>
 	</head>
@@ -298,20 +311,56 @@
 							</header>
 						</div>
 						<div class="row">
-							<main class="grid">
-								<img src="images/matlab.png"/>
-								<figcaption>
-									<p>MATLAB</p>
-								</figcaption>
-								<img src="images/python.png"/>
-								<p>Python</p>
-								<img src="images/jupyter.png"/>
-								<img src="images/arduino.png"/>
-								<img src="images/android.png"/>
-								<img src="images/github.png"/>
-								<img src="images/java.png"/>
-								<img src="images/labview.png"/>
-							</main>
+							<ul class="image-list-small">
+								<li>
+									<a style="background-image: url('images/matlab.png');"></a>
+									<div class="details">
+										<h3><a>MATLAB</a></h3>
+									</div>
+								</li>
+								<li>
+									<a style="background-image: url('images/python.png');"></a>
+									<div class="details">
+										<h3><a>Python</a></h3>
+									</div>
+								</li>
+								<li>
+									<a style="background-image: url('images/jupyter.png');"></a>
+									<div class="details">
+										<h3><a>MATLAB</a></h3>
+									</div>
+								</li>
+								<li>
+									<a style="background-image: url('images/arduino.png');"></a>
+									<div class="details">
+										<h3><a>MATLAB</a></h3>
+									</div>
+								</li>
+								<li>
+									<a style="background-image: url('images/android.png');"></a>
+									<div class="details">
+										<h3><a>MATLAB</a></h3>
+									</div>
+								</li>
+								<li>
+									<a style="background-image: url('images/github.png');"></a>
+									<div class="details">
+										<h3><a>MATLAB</a></h3>
+									</div>
+								</li>
+								<li>
+									<a style="background-image: url('images/java.png');"></a>
+									<div class="details">
+										<h3><a>MATLAB</a></h3>
+									</div>
+								</li>
+								<li>
+									<a style="background-image: url('images/labview.png');"></a>
+									<div class="details">
+										<h3><a>MATLAB</a></h3>
+									</div>
+								</li>
+							</ul>
 						</div>
 					</div>
 
