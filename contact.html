@@ -26,7 +26,7 @@
 				width: 100%;
 				display: flex;
 				justify-content: center;
-				align-items: start;
+				align-items: center;
 			}
 
 			.contain .contactInfo {
@@ -51,7 +51,7 @@
 				border-radius: 50%;
 			}
 
-			.contain .contactInfo .box .icon. .text {
+			.contain .contactInfo .box .text {
 				display: flex;
 				margin-left: 20px;
 				flex-direction: column;
@@ -80,7 +80,7 @@
 			}
 
 			.contain .contactForm .inputBox span {
-				position: absolute;
+				position: relative;
 				left: 0;
 				padding: 5px 0;
 				margin: 10px 0;
@@ -140,16 +140,16 @@
 								<form>
 									<h2>Send Message</h2>
 									<div class="inputBox">
-										<input type="text" name="" required="required">
 										<span>Full Name</span>
-									</div>
-									<div class="inputBox">
 										<input type="text" name="" required="required">
-										<span>Email</span>
 									</div>
 									<div class="inputBox">
-										<textarea required="required"></textarea>
+										<span>Email</span>
+										<input type="text" name="" required="required">
+									</div>
+									<div class="inputBox">
 										<span>Your Message</span>
+										<textarea required="required"></textarea>
 									</div>
 									<div class="inputBox">
 										<input type="submit" name="" value="Submit">
