@@ -26,7 +26,7 @@
 				width: 100%;
 				display: flex;
 				justify-content: center;
-				align-items: center;
+				align-items: start;
 			}
 
 			.contain .contactInfo {
@@ -51,19 +51,25 @@
 				border-radius: 50%;
 			}
 
-			.contactForm {
+			.contain .contactInfo .box .icon. .text {
+				display: flex;
+				margin-left: 20px;
+				flex-direction: column;
+			}
+
+			.contain .contactForm {
 				width: 40%;
 				padding: 40px;
 				background: #fff;
 			}
 
-			.contactForm .inputBox {
+			.contain .contactForm .inputBox {
 				position: relative;
 				width: 100%;
 				margin-top: 10px;
 			}
 
-			.contactForm .inputBox input, .contactForm .inputBox textarea {
+			.contain .contactForm .inputBox input, .contactForm .inputBox textarea {
 				width: 100%;
 				padding: 5px 0;
 				margin: 10px 0;
@@ -73,15 +79,14 @@
 				resize: none;
 			}
 
-			.contactForm .inputBox span {
+			.contain .contactForm .inputBox span {
 				position: absolute;
 				left: 0;
 				padding: 5px 0;
 				margin: 10px 0;
 				pointer-events: none;
 				transition: 0.5s;
-				color: #666;
-				
+				color: #666;	
 			}
 		</style>
 	</head>
